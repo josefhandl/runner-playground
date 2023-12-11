@@ -1,0 +1,14 @@
+name: Simple Sleep Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  sleep-job:
+    runs-on: self-hosted
+
+    steps:
+      - name: Sleep Forever
+        run: sleep 600
